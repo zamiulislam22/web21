@@ -1,139 +1,88 @@
-body {
-    margin: 0;
-    font-family: sans-serif;
-    background: #f2f2f2;
-}
-
-h3 {
-    text-align: center;
-    font-size: 30px;
-    margin: 0;
-    padding-top: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0;
-}
-
-.content {
-    width: 20%;
-    margin: 15px;
+* {
     box-sizing: border-box;
-    float: left;
-    text-align: center;
-    border-radius: 20px;
-    cursor: pointer;
-    padding-top: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-        0 10px 10px rgba(0, 0, 0, 0.22);
-    transition: .4s;
-    background: #f2f2f2;
 }
 
-.content:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-        0 3px 6px rgba(0, 0, 0, 0.23);
-    transform: translate(0px, -8px);
-}
-
-img {
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-p {
-    text-align: center;
-    color: #b2bec3;
-    padding-top: 0 8px;
-}
-
-h6 {
-    font-size: 26px;
-    text-align: center;
-    color: #222f3e;
-    margin: 0;
-}
-
-ul {
-    list-style: none;
-    display: flex;
+body {
     justify-content: center;
     align-items: center;
-    padding-top: 0;
+    display: flex;
+    height: 100vh;
+    background: #f2f2f2;
+    font-family: 'Russo One', sans-serif;
 }
 
-li {
-    padding-top: 5px;
+.container {
+    background: #ecf0f3;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 
-.fa {
-    font-size: 26px;
-    transition: .4s;
-    margin: 3px;
-}
 
-.checked {
-    color: #ff9f49;
-}
-
-.fa:hover {
-    transform: scale(1.3);
-    transition: .6s;
-}
-
-button {
+.form-icon {
+    color: #ac40ab;
+    font-size: 55px;
     text-align: center;
-    font-size: 24px;
-    color: #fff;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    border-radius: 50px;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #fff;
+}
+
+.title {
+    color: #ac40ab;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.container .form-control {
+    color: #333;
+    background: #ecf0f3;
+    font-size: 15px;
+    height: 50px;
+    padding: 20px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px #fff;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
     width: 100%;
-    padding: 15px;
-    border: 0;
+    margin: 0 0 25px;
     outline: none;
+}
+
+::placeholder {
+    color: #808080;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn {
+    color: #ac40ab;
+    background: #ecf0f3;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px 15px 11px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px #fff;
+    transition: all 0.5s ease 0s;
+    margin: 25px 0 20px;
     cursor: pointer;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
 }
 
-.buy-1 {
-    background: #2183a2;
-}
-
-.buy-2 {
-    background: #3b3e6e;
-}
-
-.buy-3 {
-    background: #0b0b0b;
-}
-
-.buy-4 {
-    background: #ff9f49;
-}
-
-.header {
-    margin-top: 30px;
-    text-align: center;
-    justify-content: center;
-    color: #2183a2;
-}
-
-.add {
-    text-align: center;
-    justify-content: center;
-    color: #3b3e6e;
-}
-
-.header2 {
-    color: #ff9f49;
+.btn:hover {
+    color: orange;
 }
